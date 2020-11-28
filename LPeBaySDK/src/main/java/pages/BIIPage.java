@@ -41,7 +41,7 @@ public class BIIPage extends TestBase {
 	public void submitLoanApplication()
 	{
 //		driver.findElement(By.id("businessLegalName")).sendKeys("New BLN");
-		businessLegalName.sendKeys("BLN ltd");
+		businessLegalName.sendKeys("BLN limited");
 		taxId.sendKeys("123456543");
 		annualGrossSale.sendKeys("89000");
 		ownershipPercentage.sendKeys("60");
