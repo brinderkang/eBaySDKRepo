@@ -39,7 +39,7 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver","D:\\Brinder\\BrowserDrivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
-		if(browsername.equals("FF"))
+		if(browsername.equals("Firefox"))
 		{
 		System.setProperty("webdriver.geko.driver", "D:\\Brinder\\BrowserDrivers\\gekodriver.exe");
 		driver=new FirefoxDriver();
