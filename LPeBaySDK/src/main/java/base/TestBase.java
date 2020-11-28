@@ -19,8 +19,10 @@ public class TestBase {
 	public TestBase(){
 		prop=new Properties();
 		try {
-//			FileInputStream ip=new FileInputStream(System.getProperty("user.dir"+"\\src\\main\\java\\config\\config.properties"));
-			FileInputStream ip=new FileInputStream("D:\\Brinder\\OBJ\\LPeBaySDK\\src\\main\\java\\config\\config.properties");
+			System.out.println(System.getProperty("user.dir"));
+			String str=System.getProperty("user.dir");
+//			FileInputStream ip=new FileInputStream(System.getProperty("user.dir"+"\src\main\java\config\config.properties"));
+			FileInputStream ip=new FileInputStream("C:\\Users\\GurnamSingh\\git\\eBaySDKRepo\\LPeBaySDK\\src\\main\\java\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e){
 			// TODO Auto-generated catch block

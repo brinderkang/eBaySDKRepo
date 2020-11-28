@@ -1,5 +1,6 @@
 package testcases;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -26,5 +27,10 @@ public class PIITest extends TestBase{
 	{
 		
 		objpiipage.personalinfo();
+	}
+	@AfterTest
+	public void teardown()
+	{
+//		driver.quit();
 	}
 }

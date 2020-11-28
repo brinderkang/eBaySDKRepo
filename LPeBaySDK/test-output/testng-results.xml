@@ -1,83 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" total="5" passed="0">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="eBaySDK" duration-ms="232" started-at="2020-11-28T07:29:27Z" finished-at="2020-11-28T07:29:27Z">
+  <suite name="eBaySDK" duration-ms="53218" started-at="2020-11-28T08:08:22Z" finished-at="2020-11-28T08:09:15Z">
     <groups>
     </groups>
-    <test name="smoke" duration-ms="232" started-at="2020-11-28T07:29:27Z" finished-at="2020-11-28T07:29:27Z">
-      <class name="testcases.BIITest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.BIITest@ee9593]" name="setup" is-config="true" duration-ms="176" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:testcases.LoanPageTest@107ec20]" name="setup" is-config="true" duration-ms="0" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at base.TestBase.initialisation(TestBase.java:37)
-	at testcases.LoanPageTest.setup(LoanPageTest.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:testcases.PIITest@48bfd]" name="setup" is-config="true" duration-ms="0" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="verifySubmitLoanApplication()[pri:0, instance:testcases.BIITest@ee9593]" name="verifySubmitLoanApplication" duration-ms="0" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitLoanApplication -->
-      </class> <!-- testcases.BIITest -->
+    <test name="smoke" duration-ms="40123" started-at="2020-11-28T08:08:22Z" finished-at="2020-11-28T08:09:02Z">
       <class name="testcases.LoanPageTest">
-        <test-method status="SKIP" signature="verify_pagetitle()[pri:0, instance:testcases.LoanPageTest@107ec20]" name="verify_pagetitle" duration-ms="0" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoanPageTest@340fab]" name="setup" is-config="true" duration-ms="8107" started-at="2020-11-28T13:38:22Z" finished-at="2020-11-28T13:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.PIITest@1474c6c]" name="setup" is-config="true" duration-ms="8" started-at="2020-11-28T13:38:30Z" finished-at="2020-11-28T13:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verify_pagetitle()[pri:0, instance:testcases.LoanPageTest@340fab]" name="verify_pagetitle" duration-ms="25" started-at="2020-11-28T13:38:30Z" finished-at="2020-11-28T13:38:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_pagetitle -->
-        <test-method status="SKIP" signature="verify_pagelogo()[pri:0, instance:testcases.LoanPageTest@107ec20]" name="verify_pagelogo" duration-ms="0" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
+        <test-method status="PASS" signature="verify_pagelogo()[pri:0, instance:testcases.LoanPageTest@340fab]" name="verify_pagelogo" duration-ms="10801" started-at="2020-11-28T13:38:30Z" finished-at="2020-11-28T13:38:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_pagelogo -->
-        <test-method status="SKIP" signature="verify_txtloanamount()[pri:0, instance:testcases.LoanPageTest@107ec20]" name="verify_txtloanamount" duration-ms="0" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
+        <test-method status="PASS" signature="verify_txtloanamount()[pri:0, instance:testcases.LoanPageTest@340fab]" name="verify_txtloanamount" duration-ms="2362" started-at="2020-11-28T13:38:41Z" finished-at="2020-11-28T13:38:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_txtloanamount -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:testcases.LoanPageTest@107ec20]" name="teardown" is-config="true" duration-ms="0" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.LoanPageTest@340fab]" name="teardown" is-config="true" duration-ms="0" started-at="2020-11-28T13:39:02Z" finished-at="2020-11-28T13:39:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.PIITest@1474c6c]" name="teardown" is-config="true" duration-ms="0" started-at="2020-11-28T13:39:02Z" finished-at="2020-11-28T13:39:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.LoanPageTest -->
       <class name="testcases.PIITest">
-        <test-method status="SKIP" signature="verifyPIIDetails()[pri:0, instance:testcases.PIITest@48bfd]" name="verifyPIIDetails" duration-ms="8" started-at="2020-11-28T12:59:27Z" finished-at="2020-11-28T12:59:27Z">
+        <test-method status="PASS" signature="verifyPIIDetails()[pri:0, instance:testcases.PIITest@1474c6c]" name="verifyPIIDetails" duration-ms="18791" started-at="2020-11-28T13:38:43Z" finished-at="2020-11-28T13:39:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPIIDetails -->
       </class> <!-- testcases.PIITest -->
     </test> <!-- smoke -->
+    <test name="BII" duration-ms="13054" started-at="2020-11-28T08:09:02Z" finished-at="2020-11-28T08:09:15Z">
+      <class name="testcases.BIITest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.BIITest@a4a92b]" name="setup" is-config="true" duration-ms="8" started-at="2020-11-28T13:39:02Z" finished-at="2020-11-28T13:39:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySubmitLoanApplication()[pri:0, instance:testcases.BIITest@a4a92b]" name="verifySubmitLoanApplication" duration-ms="13044" started-at="2020-11-28T13:39:02Z" finished-at="2020-11-28T13:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitLoanApplication -->
+      </class> <!-- testcases.BIITest -->
+    </test> <!-- BII -->
   </suite> <!-- eBaySDK -->
 </testng-results>

@@ -5,7 +5,8 @@
     <classes>
       <class name="testcases.PIITest">
         <methods>
-          <include name="verifyPIIDetails"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- testcases.PIITest -->
       <class name="testcases.BIITest">
@@ -16,10 +17,8 @@
       </class> <!-- testcases.BIITest -->
       <class name="testcases.LoanPageTest">
         <methods>
-          <include name="verify_pagetitle"/>
-          <include name="verify_txtloanamount"/>
+          <include name="teardown"/>
           <include name="setup"/>
-          <include name="verify_pagelogo"/>
         </methods>
       </class> <!-- testcases.LoanPageTest -->
     </classes>

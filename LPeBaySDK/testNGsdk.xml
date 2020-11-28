@@ -1,9 +1,16 @@
 <suite name ="eBaySDK">
-    <test name="smoke">
+    <test name="smoke" perserve-order="true">
         <classes>
             <class name="testcases.LoanPageTest"/>
             <class name="testcases.PIITest"/>
+           
+        </classes>
+    </test>
+    
+    <test name ="BII">
+        <classes>
             <class name="testcases.BIITest"/>
         </classes>
     </test>
+    
 </suite>

@@ -8,11 +8,12 @@ import base.TestBase;
 
 public class BIITest extends TestBase {
 	
-	BIIPage objbiipage;
 	
+	BIIPage objbiipage;
 	public BIITest()
 	{
-		super();
+		super();	
+		
 	}
 	@BeforeTest
 	public void setup()
