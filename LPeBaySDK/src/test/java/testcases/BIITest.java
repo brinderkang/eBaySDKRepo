@@ -8,7 +8,7 @@ import base.TestBase;
 
 public class BIITest extends TestBase {
 	
-//	BIIPage objbiipage;
+	BIIPage objbiipage;
 	
 	public BIITest()
 	{
@@ -17,12 +17,12 @@ public class BIITest extends TestBase {
 	@BeforeTest
 	public void setup()
 	{
-		
+		objbiipage=new BIIPage();
 	}
 	@Test
 	public void verifySubmitLoanApplication()
 	{
-		BIIPage objbiipage=new BIIPage();
+		 
 		objbiipage.submitLoanApplication();
 	}
 
