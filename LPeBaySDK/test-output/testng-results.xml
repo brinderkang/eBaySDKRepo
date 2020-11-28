@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="eBaySDK" duration-ms="74467" started-at="2020-11-27T09:40:13Z" finished-at="2020-11-27T09:41:28Z">
+    <groups>
+    </groups>
+    <test name="smoke" duration-ms="74467" started-at="2020-11-27T09:40:13Z" finished-at="2020-11-27T09:41:28Z">
+      <class name="testcases.BIITest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.BIITest@afb23c]" name="setup" is-config="true" duration-ms="21" started-at="2020-11-27T15:10:13Z" finished-at="2020-11-27T15:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoanPageTest@180d80f]" name="setup" is-config="true" duration-ms="21717" started-at="2020-11-27T15:10:13Z" finished-at="2020-11-27T15:10:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.PIITest@16995df]" name="setup" is-config="true" duration-ms="8" started-at="2020-11-27T15:10:35Z" finished-at="2020-11-27T15:10:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySubmitLoanApplication()[pri:0, instance:testcases.BIITest@afb23c]" name="verifySubmitLoanApplication" duration-ms="14275" started-at="2020-11-27T15:11:13Z" finished-at="2020-11-27T15:11:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitLoanApplication -->
+      </class> <!-- testcases.BIITest -->
+      <class name="testcases.LoanPageTest">
+        <test-method status="PASS" signature="verify_pagetitle()[pri:0, instance:testcases.LoanPageTest@180d80f]" name="verify_pagetitle" duration-ms="33" started-at="2020-11-27T15:10:35Z" finished-at="2020-11-27T15:10:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_pagetitle -->
+        <test-method status="PASS" signature="verify_pagelogo()[pri:0, instance:testcases.LoanPageTest@180d80f]" name="verify_pagelogo" duration-ms="10198" started-at="2020-11-27T15:10:35Z" finished-at="2020-11-27T15:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_pagelogo -->
+        <test-method status="PASS" signature="verify_txtloanamount()[pri:0, instance:testcases.LoanPageTest@180d80f]" name="verify_txtloanamount" duration-ms="8803" started-at="2020-11-27T15:10:45Z" finished-at="2020-11-27T15:10:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_txtloanamount -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.LoanPageTest@180d80f]" name="teardown" is-config="true" duration-ms="1" started-at="2020-11-27T15:11:28Z" finished-at="2020-11-27T15:11:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.LoanPageTest -->
+      <class name="testcases.PIITest">
+        <test-method status="PASS" signature="verifyPIIDetails()[pri:0, instance:testcases.PIITest@16995df]" name="verifyPIIDetails" duration-ms="19374" started-at="2020-11-27T15:10:54Z" finished-at="2020-11-27T15:11:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPIIDetails -->
+      </class> <!-- testcases.PIITest -->
+    </test> <!-- smoke -->
+  </suite> <!-- eBaySDK -->
+</testng-results>

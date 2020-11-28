@@ -1,0 +1,9 @@
+<suite name ="eBaySDK">
+    <test name="smoke">
+        <classes>
+            <class name="testcases.LoanPageTest"/>
+            <class name="testcases.PIITest"/>
+            <class name="testcases.BIITest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [eBaySDK]">
+  <test name="smoke(failed)">
+    <classes>
+      <class name="testcases.PIITest">
+        <methods>
+          <include name="verifyPIIDetails"/>
+        </methods>
+      </class> <!-- testcases.PIITest -->
+      <class name="testcases.BIITest">
+        <methods>
+          <include name="verifySubmitLoanApplication"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.BIITest -->
+      <class name="testcases.LoanPageTest">
+        <methods>
+          <include name="verify_pagetitle"/>
+          <include name="verify_txtloanamount"/>
+          <include name="setup"/>
+          <include name="verify_pagelogo"/>
+        </methods>
+      </class> <!-- testcases.LoanPageTest -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+</suite> <!-- Failed suite [eBaySDK] -->
