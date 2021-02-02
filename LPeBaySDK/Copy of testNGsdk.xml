@@ -3,16 +3,17 @@
         <classes>
             <class name="testcases.LoanPageTest"/>
             <class name="testcases.PIITest"/>
+            <class name="testcases.BIITest"/>
+            <class name="testcases.OffersPageTest"/>
            
         </classes>
     </test>
     
-    <test name ="BII" perserve-order="true">
+ <!--    <test name ="BII">
         <classes>
             <class name="testcases.BIITest"/>
             <class name="testcases.OffersPageTest"/>
-            <class name="testcases.BankInfoTest"/>
         </classes>
-    </test>
+    </test>--> 
     
 </suite>

@@ -4,12 +4,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pages.LoanPage;
 import pages.PIIPage;
 import base.TestBase;
 
 public class PIITest extends TestBase{
 	
 	PIIPage objpiipage;
+//	LoanPage objloanpage;
 	
 	public PIITest()
 	{
@@ -19,7 +21,12 @@ public class PIITest extends TestBase{
 	@BeforeTest
 	public void setup()
 	{
+//		initialisation();
+//		objloanpage=new LoanPage();
 		objpiipage=new PIIPage();
+//		objloanpage.addLoanAmount();
+//		objpiipage=objloanpage.clickSubmitIcon();
+		
 	}
 	
 	@Test

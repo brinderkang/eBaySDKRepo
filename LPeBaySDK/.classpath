@@ -22,5 +22,15 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/GurnamSingh/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.5/selenium-api-3.141.5.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
+			<attribute name="maven.artifactId" value="selenium-api"/>
+			<attribute name="maven.version" value="3.141.5"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Brinder/Software/selenium-java-3.14.0/client-combined-3.14.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-eBaySDK">
-              <span class="suite-name border-passed">eBaySDK</span>
+              <span class="suite-name border-failed">eBaySDK</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,56 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">10 methods, 8 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-eBaySDK" class="hide-methods failed suite-eBaySDK"> (hide)</a> <!-- hide-methods failed suite-eBaySDK -->
+                      <a href="#" panel-name="suite-eBaySDK" class="show-methods failed suite-eBaySDK"> (show)</a> <!-- show-methods failed suite-eBaySDK -->
+                    </span>
+                    <div class="method-list-content failed suite-eBaySDK">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.OffersPageTest" hash-for-method="VerifyOfferScreenElements">VerifyOfferScreenElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.OffersPageTest" hash-for-method="verifyOfferSelection">verifyOfferSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.PIITest" hash-for-method="verifyPIIDetails">verifyPIIDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.BankInfoTest" hash-for-method="verifyPlaidBankConnect">verifyPlaidBankConnect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.BankInfoTest" hash-for-method="verifyPlaidBankLogin">verifyPlaidBankLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.BIITest" hash-for-method="verifySubmitLoanApplication">verifySubmitLoanApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.LoanPageTest" hash-for-method="verify_txtloanamount">verify_txtloanamount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.BankInfoTest" hash-for-method="verifybankInfoElements">verifybankInfoElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-eBaySDK -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,27 +150,12 @@
                     <div class="method-list-content passed suite-eBaySDK">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.PIITest" hash-for-method="verifyPIIDetails">verifyPIIDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.BIITest" hash-for-method="verifySubmitLoanApplication">verifySubmitLoanApplication</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.LoanPageTest" hash-for-method="verify_pagelogo">verify_pagelogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.LoanPageTest" hash-for-method="verify_pagetitle">verify_pagetitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-eBaySDK" title="testcases.LoanPageTest" hash-for-method="verify_txtloanamount">verify_txtloanamount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-eBaySDK -->
@@ -136,9 +170,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-eBaySDK" class="panel eBaySDK">
-          <div class="suite-eBaySDK-class-passed">
+          <div class="suite-eBaySDK-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testcases.BIITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,13 +181,113 @@
                   <a name="verifySubmitLoanApplication">
                   </a> <!-- verifySubmitLoanApplication -->
                   <span class="method-name">verifySubmitLoanApplication</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos; Unfortunately, we’re unable to generate a loan offer for you at this time.&apos;]&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;KANG&apos;, ip: &apos;192.168.91.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\GURNAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7bf3a055545438d988c569d6e59e0faf
+*** Element info: {Using=xpath, value=//p[text()=&apos; Unfortunately, we’re unable to generate a loan offer for you at this time.&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at pages.BIIPage.submitLoanApplication(BIIPage.java:104)
+	at testcases.BIITest.verifySubmitLoanApplication(BIITest.java:29)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-eBaySDK-class-passed -->
-          <div class="suite-eBaySDK-class-passed">
+          </div> <!-- suite-eBaySDK-class-failed -->
+          <div class="suite-eBaySDK-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">testcases.OffersPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyOfferScreenElements">
+                  </a> <!-- VerifyOfferScreenElements -->
+                  <span class="method-name">VerifyOfferScreenElements</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Select Offer&apos;]&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;KANG&apos;, ip: &apos;192.168.91.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\GURNAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7bf3a055545438d988c569d6e59e0faf
+*** Element info: {Using=xpath, value=//div[text()=&apos;Select Offer&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at pages.OffersPage.offerPageElements(OffersPage.java:52)
+	at testcases.OffersPageTest.VerifyOfferScreenElements(OffersPageTest.java:30)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOfferSelection">
+                  </a> <!-- verifyOfferSelection -->
+                  <span class="method-name">verifyOfferSelection</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Select&apos;]&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;KANG&apos;, ip: &apos;192.168.91.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\GURNAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7bf3a055545438d988c569d6e59e0faf
+*** Element info: {Using=xpath, value=//button[text()=&apos;Select&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at pages.OffersPage.selectOffer(OffersPage.java:62)
+	at testcases.OffersPageTest.verifyOfferSelection(OffersPageTest.java:37)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-eBaySDK-class-failed -->
+          <div class="suite-eBaySDK-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">testcases.PIITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -162,10 +296,150 @@
                   <a name="verifyPIIDetails">
                   </a> <!-- verifyPIIDetails -->
                   <span class="method-name">verifyPIIDetails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#street&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;KANG&apos;, ip: &apos;192.168.91.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\GURNAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7bf3a055545438d988c569d6e59e0faf
+*** Element info: {Using=id, value=street}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at pages.PIIPage.personalinfo(PIIPage.java:69)
+	at testcases.PIITest.verifyPIIDetails(PIITest.java:36)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-eBaySDK-class-passed -->
+          </div> <!-- suite-eBaySDK-class-failed -->
+          <div class="suite-eBaySDK-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.LoanPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_txtloanamount">
+                  </a> <!-- verify_txtloanamount -->
+                  <span class="method-name">verify_txtloanamount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/app-root[1]/app-loader[1]/app-main[1]/div[1]/div[1]/app-loader[1]/app-personal-info[1]/app-component-type-loader[1]/app-sdk[1]/app-loader[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-input-mask[1]/input[1]&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;KANG&apos;, ip: &apos;192.168.91.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\GURNAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7bf3a055545438d988c569d6e59e0faf
+*** Element info: {Using=xpath, value=/html[1]/body[1]/app-root[1]/app-loader[1]/app-main[1]/div[1]/div[1]/app-loader[1]/app-personal-info[1]/app-component-type-loader[1]/app-sdk[1]/app-loader[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-input-mask[1]/input[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at pages.LoanPage.addLoanAmount(LoanPage.java:45)
+	at testcases.LoanPageTest.verify_txtloanamount(LoanPageTest.java:47)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-eBaySDK-class-failed -->
+          <div class="suite-eBaySDK-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.BankInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPlaidBankConnect">
+                  </a> <!-- verifyPlaidBankConnect -->
+                  <span class="method-name">verifyPlaidBankConnect</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:149)
+	at junit.framework.Assert.assertEquals(Assert.java:155)
+	at testcases.BankInfoTest.verifyPlaidBankConnect(BankInfoTest.java:35)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPlaidBankLogin">
+                  </a> <!-- verifyPlaidBankLogin -->
+                  <span class="method-name">verifyPlaidBankLogin</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:149)
+	at junit.framework.Assert.assertEquals(Assert.java:155)
+	at testcases.BankInfoTest.verifyPlaidBankLogin(BankInfoTest.java:41)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifybankInfoElements">
+                  </a> <!-- verifybankInfoElements -->
+                  <span class="method-name">verifybankInfoElements</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Bank Information&apos;]&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;KANG&apos;, ip: &apos;192.168.91.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\GURNAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7bf3a055545438d988c569d6e59e0faf
+*** Element info: {Using=xpath, value=//div[text()=&apos;Bank Information&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at pages.BankInfoPage.bankInfoElements(BankInfoPage.java:62)
+	at testcases.BankInfoTest.verifybankInfoElements(BankInfoTest.java:29)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-eBaySDK-class-failed -->
           <div class="suite-eBaySDK-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -184,13 +458,6 @@
                   <a name="verify_pagetitle">
                   </a> <!-- verify_pagetitle -->
                   <span class="method-name">verify_pagetitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_txtloanamount">
-                  </a> <!-- verify_txtloanamount -->
-                  <span class="method-name">verify_txtloanamount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,6 +481,8 @@
   &lt;test name=&quot;BII&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.BIITest&quot;/&gt;
+      &lt;class name=&quot;testcases.OffersPageTest&quot;/&gt;
+      &lt;class name=&quot;testcases.BankInfoTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BII --&gt;
 &lt;/suite&gt; &lt;!-- eBaySDK --&gt;
@@ -230,7 +499,7 @@
                 <span class="test-name">smoke (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">BII (1 class)</span>
+                <span class="test-name">BII (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,32 +525,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPIIDetails')
-data.setCell(0, 2, 'testcases.PIITest')
-data.setCell(0, 3, 18791);
+data.setCell(0, 1, 'verifySubmitLoanApplication')
+data.setCell(0, 2, 'testcases.BIITest')
+data.setCell(0, 3, 20470);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySubmitLoanApplication')
-data.setCell(1, 2, 'testcases.BIITest')
-data.setCell(1, 3, 13044);
+data.setCell(1, 1, 'verifyPIIDetails')
+data.setCell(1, 2, 'testcases.PIITest')
+data.setCell(1, 3, 10995);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_pagelogo')
+data.setCell(2, 1, 'verify_txtloanamount')
 data.setCell(2, 2, 'testcases.LoanPageTest')
-data.setCell(2, 3, 10801);
+data.setCell(2, 3, 10057);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_txtloanamount')
-data.setCell(3, 2, 'testcases.LoanPageTest')
-data.setCell(3, 3, 2362);
+data.setCell(3, 1, 'verifybankInfoElements')
+data.setCell(3, 2, 'testcases.BankInfoTest')
+data.setCell(3, 3, 10055);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verify_pagetitle')
+data.setCell(4, 1, 'verify_pagelogo')
 data.setCell(4, 2, 'testcases.LoanPageTest')
-data.setCell(4, 3, 25);
+data.setCell(4, 3, 10052);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyPlaidBankConnect')
+data.setCell(5, 2, 'testcases.BankInfoTest')
+data.setCell(5, 3, 10052);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifyOfferScreenElements')
+data.setCell(6, 2, 'testcases.OffersPageTest')
+data.setCell(6, 3, 10037);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyOfferSelection')
+data.setCell(7, 2, 'testcases.OffersPageTest')
+data.setCell(7, 3, 10021);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyPlaidBankLogin')
+data.setCell(8, 2, 'testcases.BankInfoTest')
+data.setCell(8, 3, 10009);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verify_pagetitle')
+data.setCell(9, 2, 'testcases.LoanPageTest')
+data.setCell(9, 3, 11);
 window.suiteTableData['eBaySDK']= { tableData: data, tableDiv: 'times-div-eBaySDK'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-eBaySDK">
               </div> <!-- times-div-eBaySDK -->
             </div> <!-- times-div -->
@@ -317,54 +606,113 @@ return data;
               <div class="chronological-class-name">testcases.PIITest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8107 ms</span>
+                <span class="method-start">6933 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoanPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verify_pagetitle</span>
-                <span class="method-start">8127 ms</span>
+                <span class="method-start">6940 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_pagelogo</span>
-                <span class="method-start">8154 ms</span>
+                <span class="method-start">6951 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_txtloanamount</span>
-                <span class="method-start">18956 ms</span>
+                <span class="method-start">17004 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.PIITest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyPIIDetails</span>
-                <span class="method-start">21322 ms</span>
+                <span class="method-start">27063 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoanPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">40114 ms</span>
+                <span class="method-start">38059 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.PIITest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">40114 ms</span>
+                <span class="method-start">38060 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.BIITest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">40155 ms</span>
+                <span class="method-start">38079 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.BankInfoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38204 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.OffersPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38206 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.BIITest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifySubmitLoanApplication</span>
-                <span class="method-start">40164 ms</span>
+                <span class="method-start">38207 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.OffersPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyOfferScreenElements</span>
+                <span class="method-start">58679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyOfferSelection</span>
+                <span class="method-start">68717 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.BankInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPlaidBankConnect</span>
+                <span class="method-start">78739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPlaidBankLogin</span>
+                <span class="method-start">88792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifybankInfoElements</span>
+                <span class="method-start">98802 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,5 +1,7 @@
 package testcases;
 
+import junit.framework.Assert;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -24,7 +26,8 @@ public class BIITest extends TestBase {
 	public void verifySubmitLoanApplication()
 	{
 		 
-		objbiipage.submitLoanApplication();
+		boolean biipage=objbiipage.submitLoanApplication();
+		Assert.assertEquals(true, biipage);
 	}
 
 }

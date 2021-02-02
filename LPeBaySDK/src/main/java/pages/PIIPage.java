@@ -1,10 +1,8 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import util.Util;
 import base.TestBase;
@@ -66,7 +64,7 @@ public class PIIPage extends TestBase {
 		firstname.sendKeys("John");
 		lastname.sendKeys("Smith");
 		dob.sendKeys("02/28/1975");
-		phonenumber.sendKeys("3202163245");
+		phonenumber.sendKeys(prop.getProperty("phone"));
 		email.sendKeys(prop.getProperty("email"));
 		address1.sendKeys("222333 Peachtree Palace");
 		address2.sendKeys("23");
@@ -74,7 +72,7 @@ public class PIIPage extends TestBase {
 		Thread.sleep(10000);
 		annualincome.sendKeys("65000");
 		ssn3.sendKeys("3333");
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		ssn1.sendKeys("112");
 		ssn2.sendKeys("22");
 		btncontinue.click();

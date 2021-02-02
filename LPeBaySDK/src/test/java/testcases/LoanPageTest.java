@@ -1,20 +1,22 @@
 package testcases;
 
-import junit.framework.Assert;
 
-import org.testng.annotations.AfterMethod;
+
+
+
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.LoanPage;
+import pages.PIIPage;
 import base.TestBase;
 
 public class LoanPageTest extends TestBase {
 	
 	LoanPage objloanpage;
-	
+	PIIPage objpiipage;
 	public LoanPageTest()
 	{
 		super();
@@ -43,7 +45,8 @@ public class LoanPageTest extends TestBase {
 	public void verify_txtloanamount()
 	{
 		objloanpage.addLoanAmount();
-		objloanpage.clickSubmitIcon();
+		objpiipage=objloanpage.clickSubmitIcon();
+		Assert.assertTrue(true, "PII details not submitted");
 	}
 	
 	@AfterTest

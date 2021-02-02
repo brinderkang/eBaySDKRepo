@@ -1,14 +1,17 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import base.TestBase;
 
+
+
+
 public class LoanPage extends TestBase {
+	
+	
 		    //WebElement to be used with PageFactory
 	@FindBy(xpath="//img[@src='https://stglpapps.wpengine.com/wp-content/uploads/2020/08/ebay-10.33.47.png']")
 	WebElement logo;
@@ -22,6 +25,7 @@ public class LoanPage extends TestBase {
 	public LoanPage()
 	{
 		PageFactory.initElements(driver, this);
+		
 	}
 	public String pageTitle()
 	{
@@ -40,13 +44,11 @@ public class LoanPage extends TestBase {
 	{
 		txtloanamount.sendKeys(prop.getProperty("loanamount"));
 	}
-	public void clickSubmitIcon()
+	public PIIPage clickSubmitIcon()
 	{
 		submiticon.click();
-//		WebElement ele=driver.findElement(By.xpath("//select[@id='loanPurpose']"));
-//		ele.click();
-//		Select obj=new Select(driver.findElement(By.xpath("//select[@id='loanPurpose']")));
-//		obj.selectByValue("BUSINESS EXPANSION");
+		return new PIIPage();
+
 	}
 	
 }
