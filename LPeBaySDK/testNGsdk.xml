@@ -1,18 +1,21 @@
 <suite name ="eBaySDK">
+    <listeners>
+    <listener class-name="extentR.ExtentReportListenerLP"/>
+    </listeners>
+    
     <test name="smoke" perserve-order="true">
-        <classes>
-            <class name="testcases.LoanPageTest"/>
-            <class name="testcases.PIITest"/>
-           
+        <classes>              
+            <class name="testcases.DetailsTest"/>
+            <class name="testcases.OffersPageTest"/>
+    
         </classes>
     </test>
     
-    <test name ="BII" perserve-order="true">
+    <test name ="BankInfo" perserve-order="true">
         <classes>
-            <class name="testcases.BIITest"/>
-            <class name="testcases.OffersPageTest"/>
             <class name="testcases.BankInfoTest"/>
+            <class name="testcases.BankInfoConfirmTest"/>
         </classes>
-    </test>
+    </test> 
     
 </suite>

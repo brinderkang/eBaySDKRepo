@@ -9,6 +9,7 @@ package util;
 //import org.apache.poi.ss.usermodel.Row;
 //import org.apache.poi.xssf.usermodel.XSSFSheet;
 //import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -25,6 +26,11 @@ public class Util extends TestBase{
 		Select objselect=new Select(element);
 		objselect.selectByValue(txtvalue);
 	}
+	public static void selectddByVisibleText(WebElement element,String txtvalue)
+	{
+		Select objselect=new Select(element);
+		objselect.selectByVisibleText(txtvalue);
+	}
 	
 	public static void waituntilElementClickable(WebElement element)
 	{
@@ -37,6 +43,11 @@ public class Util extends TestBase{
 		WebDriverWait wait;
 		wait =new WebDriverWait(driver,40);
 		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public static void scrollpage(WebElement element)
+	{
+		JavascriptExecutor je =(JavascriptExecutor)driver;
+		je.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 //	public void ReadExcelData(String sheetname)
 //	{

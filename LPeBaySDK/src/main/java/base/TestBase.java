@@ -1,10 +1,20 @@
 package base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+
+
+
+
 
 
 
@@ -13,13 +23,18 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import util.Util;
 
 public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
-	
 	public TestBase(){
 		prop=new Properties();
 		try {
@@ -37,8 +52,12 @@ public class TestBase {
 		}
 	}
 	
-	public static void initialisation()
+	public void initialisation()
 	{
+//		*****************************************
+		
+//		*****************************************
+
 		String browsername=prop.getProperty("browser");
 		if(browsername.equalsIgnoreCase("chrome"))
 		{

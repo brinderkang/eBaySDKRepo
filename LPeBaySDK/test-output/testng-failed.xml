@@ -1,47 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [eBaySDK]">
+  <listeners>
+    <listener class-name="extentR.ExtentReportListenerLP"/>
+  </listeners>
   <test name="smoke(failed)">
     <classes>
-      <class name="testcases.BIITest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.BIITest -->
-      <class name="testcases.OffersPageTest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.OffersPageTest -->
-      <class name="testcases.LoanPageTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="verify_txtloanamount"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.LoanPageTest -->
-      <class name="testcases.PIITest">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="verifyPIIDetails"/>
-        </methods>
-      </class> <!-- testcases.PIITest -->
       <class name="testcases.BankInfoTest">
         <methods>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.BankInfoTest -->
-    </classes>
-  </test> <!-- smoke(failed) -->
-  <test name="BII(failed)">
-    <classes>
-      <class name="testcases.BIITest">
+      <class name="testcases.DetailsTest">
         <methods>
-          <include name="verifySubmitLoanApplication"/>
           <include name="setup"/>
+          <include name="verify_pagelogo"/>
+          <include name="verifySubmitLoanApplication"/>
         </methods>
-      </class> <!-- testcases.BIITest -->
+      </class> <!-- testcases.DetailsTest -->
       <class name="testcases.OffersPageTest">
         <methods>
           <include name="setup"/>
@@ -49,18 +25,15 @@
           <include name="verifyOfferSelection"/>
         </methods>
       </class> <!-- testcases.OffersPageTest -->
-      <class name="testcases.PIITest">
+      <class name="testcases.BankInfoConfirmTest">
         <methods>
-          <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testcases.PIITest -->
-      <class name="testcases.LoanPageTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.LoanPageTest -->
+      </class> <!-- testcases.BankInfoConfirmTest -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+  <test name="BankInfo(failed)">
+    <classes>
       <class name="testcases.BankInfoTest">
         <methods>
           <include name="verifyPlaidBankConnect"/>
@@ -69,6 +42,23 @@
           <include name="verifybankInfoElements"/>
         </methods>
       </class> <!-- testcases.BankInfoTest -->
+      <class name="testcases.DetailsTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.DetailsTest -->
+      <class name="testcases.OffersPageTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.OffersPageTest -->
+      <class name="testcases.BankInfoConfirmTest">
+        <methods>
+          <include name="verify_selectBankAccount"/>
+          <include name="verifyBankName"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.BankInfoConfirmTest -->
     </classes>
-  </test> <!-- BII(failed) -->
+  </test> <!-- BankInfo(failed) -->
 </suite> <!-- Failed suite [eBaySDK] -->

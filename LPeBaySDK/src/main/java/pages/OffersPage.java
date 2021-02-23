@@ -39,9 +39,11 @@ public class OffersPage extends TestBase {
 	WebElement identityverifailedtxt;
 	@FindBy(xpath = "//a[text()=' Try Again ']")
 	WebElement tryagainbtn;
+	@FindBy(xpath="//button[text()=' Continue ']")
+	WebElement btncontinueidentity;
 	
 	
-	BankInfoPage obj_bankinfo;
+	
 	public OffersPage()
 	{
 		PageFactory.initElements(driver, this);
@@ -60,16 +62,27 @@ public class OffersPage extends TestBase {
 	public boolean selectOffer() throws InterruptedException
 	{
 		selectofferbtn.click();
-		obj_bankinfo = new BankInfoPage();
+		BankInfoPage obj_bankinfo = new BankInfoPage();
 //		boolean bnkinfotxt=obj_bankinfo.bankinfotxt.isDisplayed();
 		try{
-			if(identityverifailedtxt.isDisplayed())
+			Thread.sleep(10000);
+			if(tryagainbtn.isDisplayed())
 			{
 				System.out.println("Identification failed");
 				tryagainbtn.click();
 			}
 		}catch(Exception e){
 			System.out.println("continue to Bank Info screen");
+		}
+		try {
+			if(btncontinueidentity.isDisplayed())
+			{
+				btncontinueidentity.click();
+				System.out.println("continue button clicked");
+			}
+		} catch (Exception e) {
+			System.out.println("continue to Bank Info screen from Verify Identity");
+			e.printStackTrace();
 		}
 		Thread.sleep(15000);
 		return obj_bankinfo.bankinfotxt.isDisplayed();

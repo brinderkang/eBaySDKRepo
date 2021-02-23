@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -20,7 +21,7 @@ public class BankInfoPage extends TestBase {
 	WebElement skipplaidbtn;
 	
 //	PLAID
-	@FindBy(xpath = "//h1[contains(text(),'LendingPoint uses')]")
+	@FindBy(id="a11y-title")
 	WebElement usesplaidtxt;
 	@FindBy(xpath = "//span[text()='Continue']")
 	WebElement continuebtn;
@@ -42,9 +43,13 @@ public class BankInfoPage extends TestBase {
 	
 	@FindBy(xpath = "//h1[text()='Select account']")
 	WebElement selectacctxt;
-	@FindBy(xpath = "//input[@id='vZpeMBG13BsnAJE6ZDZRI4eppy8z8JFWbZ5Wr']")
+	@FindBy(id="vZpeMBG13BsnAJE6ZDZRI4eppy8z8JFWbZ5Wr")
 	//div[text()='Plaid Saving']
 	WebElement checkboxplaidsaving;
+	@FindBy(xpath="//div[text()='Plaid Checking']")
+	WebElement checkboxplaidchecking;
+	@FindBy(xpath="//div[text()='Plaid Saving']")
+	WebElement checkboxplaidsaving1;
 	@FindBy(xpath = "//span[text()='Continue']")
 	WebElement continueselectaccbtn;
 	
@@ -69,8 +74,13 @@ public class BankInfoPage extends TestBase {
 	{
 		try {
 			connectyourbanktxt.click();
+			Thread.sleep(3000);
+			driver.switchTo().frame("plaid-link-iframe-1");
+			
 			usesplaidtxt.isDisplayed();
-//			continuebtn.click();
+			String pl=usesplaidtxt.getText();
+			System.out.println(pl);
+			continuebtn.click();
 			selecturbanktxt.isDisplayed();
 			banksearchtextbox.sendKeys(prop.getProperty("bankname"));
 			banksearchresult.click();
@@ -79,6 +89,16 @@ public class BankInfoPage extends TestBase {
 			// TODO Auto-generated catch block
 //			e.printStackTrace();
 			System.out.println("Unsuccessful bank connect in plaid");
+//			String winHandleBefore = driver.getWindowHandle();
+//			
+//			// Perform the click operation that opens new window
+//
+//			// Switch to new window opened
+//			for(String winHandle : driver.getWindowHandles()){
+//				System.out.println(winHandle);
+//			    driver.switchTo().window(winHandle);
+//			}
+			
 			return false;
 		}
 	}
@@ -91,16 +111,19 @@ public class BankInfoPage extends TestBase {
 			submitbtn.click();
 			
 			selectacctxt.isDisplayed();
-			checkboxplaidsaving.click();
+			checkboxplaidsaving1.click();
 			continueselectaccbtn.click();
 			
 			requestaccesstxt.isDisplayed();
 			allowbtn.click();
+			driver.switchTo().defaultContent();
 			return true;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 //			e.printStackTrace();
+			checkboxplaidsaving.click();
 			System.out.println("Unsuccessful bank login in plaid");
+			
 			return false;
 		}
 	}

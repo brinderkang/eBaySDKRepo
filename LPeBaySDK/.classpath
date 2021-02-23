@@ -32,5 +32,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Brinder/Software/selenium-java-3.14.0/client-combined-3.14.0.jar"/>
+	<classpathentry kind="lib" path="D:/Brinder/OBJ/Gmail/src/extentreports-java-2.41.2/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/GurnamSingh/git/eBaySDKRepo/LPeBaySDK/Jars/freemarker-2.3.30.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,7 +1,7 @@
 package testcases;
 
-import junit.framework.Assert;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -19,22 +19,23 @@ public class BankInfoTest extends TestBase {
 	@BeforeTest
 	public void setup()
 	{
-		objbankinfo=new BankInfoPage();
+		objbankinfo = new BankInfoPage();
 		
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void verifybankInfoElements()
 	{
-		objbankinfo.bankInfoElements();
+		boolean bankpage_ele=objbankinfo.bankInfoElements();
+		Assert.assertEquals(true, bankpage_ele);
 	}
-	@Test
+	@Test(priority=2)
 	public void verifyPlaidBankConnect()
 	{
 		boolean bankconnection=objbankinfo.bankConnectPlaid();
 		Assert.assertEquals(true, bankconnection);
 	}
-	@Test
+	@Test(priority=3)
 	public void verifyPlaidBankLogin()
 	{
 		boolean banklogin=objbankinfo.plaidcredentials();

@@ -24,13 +24,13 @@ public class OffersPageTest {
 		obj_offerpage= new OffersPage();
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void VerifyOfferScreenElements()
 	{
 		boolean offersElements=obj_offerpage.offerPageElements();
 		Assert.assertEquals(true, offersElements);
 	}
-	@Test
+	@Test(priority=2)
 	public void verifyOfferSelection() throws InterruptedException
 	{
 		
